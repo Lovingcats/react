@@ -8,10 +8,13 @@ export default function slide() {
   return (
     <div>
       <FullPage controls controlsProps={{ className: "slide-navigation" }}>
-        <Slide>
+        <Slide
+          style={{ background: "url(./mainP.jfif)", backgroundSize: "cover" , backgroundRepeat: 'no-repeat', backgroundPosition: 'center', width: '100vw',
+          height: '100vh'}}
+        >
           <div className="firstP">
             <div className="floating">
-              <h2 >갤러리</h2>
+              <h2>갤러리</h2>
               <AiOutlineArrowDown size="35%" />
             </div>
           </div>

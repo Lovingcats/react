@@ -1,14 +1,17 @@
 import React from "react";
 import "../App.css";
+import { FullPage, Slide } from "react-full-page";
+
 import Header from "./header";
 export default function container() {
   return (
-    <div>
-      <div className="outer">
-      <div className="inner first"><Header/></div>
-      <div className="inner ">2</div>
-      <div className="inner ">3</div>
-      </div>
-    </div>
+    <FullPage controls>
+      <Slide>
+        <Header />
+      </Slide>
+      <Slide>
+        <h1>2번째</h1>
+      </Slide>
+    </FullPage>
   );
 }

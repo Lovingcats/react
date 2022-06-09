@@ -65,7 +65,9 @@ body {
   position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
 }
 
-.floating {
+
+
+/* .floating {
   position: absolute;
   bottom: 80px;
   left: 50%;
@@ -95,7 +97,7 @@ body {
   to {
     transform: translate(-50%, -0px);
   }
-}
+} */
 
 /* .firstT {
   animation-name: up;

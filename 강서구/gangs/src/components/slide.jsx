@@ -2,7 +2,6 @@ import React from "react";
 import "../App.css";
 import { FullPage, Slide } from "react-full-page";
 import Header from "./header";
-import { AiOutlineArrowDown } from "react-icons/ai";
 
 export default function slide() {
   return (
@@ -12,8 +11,7 @@ export default function slide() {
           <div className="firstP">
             <div className="firstE">
                 <h1>강서구 알리기</h1>
-                <br></br>
-                <h3>부산 Sw고 / 조따팀</h3>
+                <p>줄바꿈 왜 안되냐</p>
                 
             </div>
           </div>

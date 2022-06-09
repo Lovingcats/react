@@ -59,7 +59,7 @@ body {
 .firstP {
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3); /*살짝 투명한 검정으로 배경색*/
+  background-color: rgba(0, 0, 0, 0.4); /*살짝 투명한 검정으로 배경색*/
   width: 100%;
   height: 100%;
   position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
@@ -77,6 +77,7 @@ body {
 }
 
 .firstE {
+  white-space: pre-wrap;
   text-align: center;
   padding: 10px;
   display: flex;

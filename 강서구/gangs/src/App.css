@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
 
 .App {
-  
   position: absolute;
   top: 0;
   left: 0;
@@ -59,6 +58,7 @@ body {
 
 .firstP {
   display: flex;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/
   width: 100%;
   height: 100%;
@@ -66,14 +66,18 @@ body {
 }
 
 .floating {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
   margin: auto;
   justify-content: center;
   flex-direction: column;
-  font-size: 90%;
+  font-size: 100%;
   text-align: center;
   border-radius: 50px;
-  height: 100px;
-  width: 100px;
+  height: 10%;
+  width: 10%;
   background-color: black;
   animation-name: floating;
   animation-duration: 3s;
@@ -83,13 +87,13 @@ body {
 
 @keyframes floating {
   from {
-    transform: translate(0, 0px);
+    transform: translate(-50%, 0px);
   }
   65% {
-    transform: translate(0, 30px);
+    transform: translate(-50%, 30px);
   }
   to {
-    transform: translate(0, -0px);
+    transform: translate(-50%, -0px);
   }
 }
 
@@ -100,4 +104,9 @@ body {
   display: block;
   color: #ffffff;
   text-align: center;
+}
+
+.firstP > h1 {
+  font-family: "Dongle", sans-serif;
+  font-size: 500%;
 }

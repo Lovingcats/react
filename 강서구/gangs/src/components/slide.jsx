@@ -10,7 +10,7 @@ export default function slide() {
       <FullPage controls controlsProps={{ className: "slide-navigation" }}>
         <Slide className="firstS">
           <div className="firstP">
-            <h1 id=""></h1>
+            <h1>여기는 h1태그가 들어갑니다</h1>
 
             <div className="floating">  {/* 애니메이션 화살표 */}
               <h2>갤러리</h2>

@@ -6,17 +6,17 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 
 export default function slide() {
   return (
-    <div>
+    <div >
       <FullPage controls controlsProps={{ className: "slide-navigation" }}>
-        <Slide
-          style={{ background: "url(./mainP.jfif)", backgroundSize: "cover" , backgroundRepeat: 'no-repeat', backgroundPosition: 'center', width: '100vw',
-          height: '100vh'}}
-        >
+        <Slide className="firstS">
           <div className="firstP">
-            <div className="floating">
+            <h1 id=""></h1>
+
+            <div className="floating">  {/* 애니메이션 화살표 */}
               <h2>갤러리</h2>
               <AiOutlineArrowDown size="35%" />
             </div>
+
           </div>
         </Slide>
         <Slide className="secondP">

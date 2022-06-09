@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
 .App {
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -19,10 +22,8 @@
 }
 
 body {
-  margin : 0;
+  margin: 0;
 }
-
-
 
 .slide-navigation button:nth-child(1) {
   display: none;
@@ -56,9 +57,12 @@ body {
   border: 1px solid white;
 }
 
-.firstP{
-  
+.firstP {
   display: flex;
+  background-color: rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/
+  width: 100%;
+  height: 100%;
+  position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
 }
 
 .floating {
@@ -70,7 +74,7 @@ body {
   border-radius: 50px;
   height: 100px;
   width: 100px;
-  background-color: #FBF7D6;
+  background-color: black;
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -78,7 +82,22 @@ body {
 }
 
 @keyframes floating {
-  from { transform: translate(0,  0px); }
-  65%  { transform: translate(0, 30px); }
-  to   { transform: translate(0, -0px); }    
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 30px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.firstS {
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main.png);
+  background-size: contain;
+  display: block;
+  color: #ffffff;
+  text-align: center;
 }

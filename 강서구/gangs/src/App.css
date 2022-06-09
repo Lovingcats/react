@@ -76,6 +76,17 @@ body {
   text-align: center;
 }
 
+.firstE {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7); /*살짝 투명한 검정으로 배경색*/
+  width: 100%;
+  height: 20%;
+  position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
+}
+
 /* .floating {
   position: absolute;
   bottom: 80px;

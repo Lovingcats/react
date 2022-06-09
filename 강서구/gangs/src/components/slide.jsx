@@ -10,7 +10,12 @@ export default function slide() {
       <FullPage controls controlsProps={{ className: "slide-navigation" }}>
         <Slide className="firstS">
           <div className="firstP">
-
+            <div className="firstE">
+                <h1>강서구 알리기</h1>
+                <br></br>
+                <h3>부산 Sw고 / 조따팀</h3>
+                
+            </div>
           </div>
         </Slide>
         <Slide className="secondP">

@@ -97,16 +97,21 @@ body {
   }
 }
 
-.firstS {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main.png);
-  background-size: contain;
-  display: block;
-  color: #ffffff;
-  text-align: center;
+/* .firstT {
+  animation-name: up;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
-.firstP > h1 {
-  font-family: "Dongle", sans-serif;
-  font-size: 500%;
-}
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 3;
+    transform: none;
+  }
+} */

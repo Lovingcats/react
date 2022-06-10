@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
-
 .App {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #e6e4e4;
   background-size: cover;
 }
 
@@ -20,121 +17,111 @@
   font-size: 120%;
 }
 
-body {
-  margin: 0;
-}
-
-.slide-navigation button:nth-child(1) {
-  display: none;
-}
-
-.slide-navigation button:nth-last-child(1) {
-  display: none;
-}
-
-.slide-navigation button {
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid black;
-  width: 5px;
-  height: 15px;
-  margin: 0 5px;
-  font-size: 0px;
-  cursor: pointer;
-}
-
-.slide-navigation {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  bottom: 0px;
-}
-
-.slide-navigation button:disabled {
-  background-color: black;
-  border: 1px solid white;
-}
-
-.firstP {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4); /*살짝 투명한 검정으로 배경색*/
-  width: 100%;
-  height: 100%;
-  position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
-}
-
-.firstS {
-  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main4.png);
-  object-fit: cover;
-  object-position: 50% 50%;
-  width: 50;
-  background-repeat: no-repeat;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-}
-
-.firstE {
-  white-space: pre-wrap;
-  text-align: center;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7); /*살짝 투명한 검정으로 배경색*/
-  width: 100%;
-  height: 20%;
-  position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
-}
-
-/* .floating {
+div {
+  background-size: cover;
+  width: 60%;
+  height: 75%;
   position: absolute;
-  bottom: 80px;
+}
+
+div.p1 {
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main1.jpg);
+  top: 0%;
+  left: 0%;
+  animation: up 0.5s ease-in-out;
+}
+
+div.p2{
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main2.jfif);
+  top: 50%;
+  left: 5%;
+  animation: up 0.8s ease-in-out;
+}
+
+/*div.p3{
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main3.jfif);
+  top: 100%;
+  left: 0%;
+
+  animation: up 1.5s ease-in-out;
+}
+
+div.p4 {
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main4.jfif);
+  top: 100%;
+  left: 20%;
+  z-index: 1;
+  animation: up 3s ease-in-out;
+}
+
+div.p5{
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main5.jfif);
+  top: 85%;
   left: 50%;
-  transform: translateX(-50%);
-  margin: auto;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 100%;
-  text-align: center;
-  border-radius: 50px;
-  height: 10%;
-  width: 10%;
-  background-color: black;
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation: up 2s ease-in-out;
 }
 
-@keyframes floating {
-  from {
-    transform: translate(-50%, 0px);
-  }
-  65% {
-    transform: translate(-50%, 30px);
-  }
-  to {
-    transform: translate(-50%, -0px);
-  }
-} */
+div.p6{
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main6.jfif);
+  top: 55%;
+  left: 75%;
 
-/* .firstT {
-  animation-name: up;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation: up 1.5s ease-in-out;
 }
 
-@keyframes up {
-  from {
+div.p7 {
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main7.jfif);
+  top: 0%;
+  left: 80%;
+  z-index: 1;
+  animation: up 3s ease-in-out;
+}
+
+div.p8{
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main8.jfif);
+  top: 50%;
+  left: 100%;
+  animation: up 2s ease-in-out;
+}
+
+div.p9{
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main9.jfif);
+  top: 70%;
+  left: 60%;
+
+  animation: up 1.5s ease-in-out;
+}
+
+div.p10 {
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main10.jfif);
+  top: 55%;
+  left: 60%;
+  z-index: 1;
+  animation: up 3s ease-in-out;
+}*/
+
+div.p11 {
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main11.jfif);
+  top: 52%;
+  left: 212%;
+  z-index: 1;
+  animation: up 0.8s ease-in-out;
+}
+
+div.p12 {
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main12.jfif);
+  top: 102%;
+  left: 217%;
+  animation: up 0.5s ease-in-out;
+}
+
+@keyframes up{
+  0%{
     opacity: 0;
     transform: translateY(20px);
   }
-
-  to {
-    opacity: 3;
+  100%{
+    opacity: 1;
     transform: none;
   }
-} */
+}

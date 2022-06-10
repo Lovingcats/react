@@ -35,28 +35,29 @@ div.p2{
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main2.jfif);
   top: 50%;
   left: 5%;
+  z-index: 1;
   animation: up 0.8s ease-in-out;
 }
 
-/*div.p3{
+div.p3{
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main3.jfif);
   top: 100%;
   left: 0%;
 
-  animation: up 1.5s ease-in-out;
+  animation: up 1s ease-in-out;
 }
 
 div.p4 {
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main4.jfif);
-  top: 100%;
-  left: 20%;
+  top: 95%;
+  left: 50%;
   z-index: 1;
-  animation: up 3s ease-in-out;
+  animation: up 1.5s ease-in-out;
 }
 
-div.p5{
+/*div.p5{
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main5.jfif);
-  top: 85%;
+  top: 100%;
   left: 50%;
   animation: up 2s ease-in-out;
 }
@@ -82,23 +83,22 @@ div.p8{
   top: 50%;
   left: 100%;
   animation: up 2s ease-in-out;
-}
+}*/
 
 div.p9{
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main9.jfif);
-  top: 70%;
-  left: 60%;
-
+  top: 97%;
+  left: 167%;
+  z-index: 2;
   animation: up 1.5s ease-in-out;
 }
 
 div.p10 {
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main10.jfif);
-  top: 55%;
-  left: 60%;
-  z-index: 1;
-  animation: up 3s ease-in-out;
-}*/
+  top: 2%;
+  left: 217%;
+  animation: up 1s ease-in-out;
+}
 
 div.p11 {
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main11.jfif);

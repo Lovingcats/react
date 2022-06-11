@@ -41,7 +41,7 @@ div.p2{
 
 div.p3{
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main3.jfif);
-  top: 100%;
+  top: 102%;
   left: 0%;
 
   animation: up 1s ease-in-out;
@@ -52,45 +52,46 @@ div.p4 {
   top: 95%;
   left: 50%;
   z-index: 1;
-  animation: up 1.5s ease-in-out;
+  animation: up 1s ease-in-out;
 }
 
-/*div.p5{
+div.p5{
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main5.jfif);
-  top: 100%;
+  top: 5%;
   left: 50%;
-  animation: up 2s ease-in-out;
+  z-index: 2;
+  animation: up 1s ease-in-out;
 }
 
 div.p6{
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main6.jfif);
-  top: 55%;
-  left: 75%;
+  top: 50%;
+  left: 148%;
 
-  animation: up 1.5s ease-in-out;
+  animation: up 0.8s ease-in-out;
 }
 
 div.p7 {
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main7.jfif);
-  top: 0%;
-  left: 80%;
-  z-index: 1;
-  animation: up 3s ease-in-out;
+  top: 50%;
+  left: 70%;
+  animation: up 0.8s ease-in-out;
 }
 
 div.p8{
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main8.jfif);
-  top: 50%;
-  left: 100%;
-  animation: up 2s ease-in-out;
-}*/
+  top: 5%;
+  left: 167%;
+  z-index: 3;
+  animation: up 1s ease-in-out;
+}
 
 div.p9{
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main9.jfif);
   top: 97%;
   left: 167%;
   z-index: 2;
-  animation: up 1.5s ease-in-out;
+  animation: up 1s ease-in-out;
 }
 
 div.p10 {
@@ -112,6 +113,20 @@ div.p12 {
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main12.jfif);
   top: 102%;
   left: 217%;
+  animation: up 0.5s ease-in-out;
+}
+
+div.p13 {
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main13.jfif);
+  top: 102%;
+  left: 75%;
+  animation: up 0.5s ease-in-out;
+}
+
+div.p14 {
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main14.jfif);
+  top: 102%;
+  left: 142%;
   animation: up 0.5s ease-in-out;
 }
 

@@ -41,6 +41,13 @@ export default function slide() {
       <div className="p12">
         
       </div>
+      <div className="p13">
+        
+      </div>
+      <div className="p14">
+        
+      </div>
+      
     </div>
   );
 }

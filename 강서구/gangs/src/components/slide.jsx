@@ -4,7 +4,12 @@ import Header from "./header";
 
 export default function slide() {
   return (
-    <div className="dark">
+    <div>
+      
+      <div className="dark">
+        
+      </div>
+      
       <div className="p1">
         
       </div>

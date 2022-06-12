@@ -21,12 +21,18 @@
 .dark {
   display: flex;
   justify-content: center;
+  z-index: 10;
+  width: 277.8%;
+  height: 177.5%;
   background-color: rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/
   position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
 }
 
 div {
-  
+  background-size: cover;
+  width: 60%;
+  height: 75%;
+  position: absolute;
 }
 
 div.p1 {
@@ -34,10 +40,6 @@ div.p1 {
   top: 0%;
   left: 0%;
   animation: up 0.5s ease-in-out;
-  background-size: cover;
-  width: 60%;
-  height: 75%;
-  position: absolute;
 }
 
 div.p2{
@@ -46,10 +48,6 @@ div.p2{
   left: 5%;
   z-index: 1;
   animation: up 0.8s ease-in-out;
-  background-size: cover;
-  width: 60%;
-  height: 75%;
-  position: absolute;
 }
 
 div.p3{
@@ -58,10 +56,6 @@ div.p3{
   left: 0%;
 
   animation: up 1s ease-in-out;
-  background-size: cover;
-  width: 60%;
-  height: 75%;
-  position: absolute;
 }
 
 div.p4 {
@@ -70,10 +64,6 @@ div.p4 {
   left: 50%;
   z-index: 1;
   animation: up 1s ease-in-out;
-  background-size: cover;
-  width: 60%;
-  height: 75%;
-  position: absolute;
 }
 
 div.p5{
@@ -82,10 +72,6 @@ div.p5{
   left: 50%;
   z-index: 2;
   animation: up 1s ease-in-out;
-  background-size: cover;
-  width: 60%;
-  height: 75%;
-  position: absolute;
 }
 
 div.p6{
@@ -95,10 +81,6 @@ div.p6{
 
   z-index: 5;
   animation: up 0.8s ease-in-out;
-  background-size: cover;
-  width: 60%;
-  height: 75%;
-  position: absolute;
 }
 
 div.p7 {
@@ -107,10 +89,6 @@ div.p7 {
   left: 70%;
   z-index: 5;
   animation: up 0.8s ease-in-out;
-  background-size: cover;
-  width: 60%;
-  height: 75%;
-  position: absolute;
 }
 
 div.p8{
@@ -119,10 +97,6 @@ div.p8{
   left: 167%;
   z-index: 3;
   animation: up 1s ease-in-out;
-  background-size: cover;
-  width: 60%;
-  height: 75%;
-  position: absolute;
 }
 
 div.p9{
@@ -131,10 +105,6 @@ div.p9{
   left: 167%;
   z-index: 2;
   animation: up 1s ease-in-out;
-  background-size: cover;
-  width: 60%;
-  height: 75%;
-  position: absolute;
 }
 
 div.p10 {

@@ -17,6 +17,10 @@
   font-size: 120%;
 }
 
+.dark{
+  
+}
+
 div {
   background-size: cover;
   width: 60%;
@@ -68,6 +72,7 @@ div.p6{
   top: 50%;
   left: 148%;
 
+  z-index: 5;
   animation: up 0.8s ease-in-out;
 }
 
@@ -75,6 +80,7 @@ div.p7 {
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main7.jfif);
   top: 50%;
   left: 70%;
+  z-index: 5;
   animation: up 0.8s ease-in-out;
 }
 
@@ -126,6 +132,21 @@ div.p13 {
 div.p14 {
   background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main14.jfif);
   top: 102%;
+  left: 142%;
+  animation: up 0.5s ease-in-out;
+}
+
+div.p15 {
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main15.jfif);
+  top: 0%;
+  left: 75%;
+  
+  animation: up 0.5s ease-in-out;
+}
+
+div.p16 {
+  background-image: url(C:\Users\SW2146\Desktop\react\강서구\gangs\public\main16.jfif);
+  top: 0%;
   left: 142%;
   animation: up 0.5s ease-in-out;
 }

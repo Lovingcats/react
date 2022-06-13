@@ -7,8 +7,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Slide />
-        <Gallery />
+        <Switch>
+          <Route exact path="/">
+            <Slide />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
+          </Route>
+        </Switch>
       </div>
     </BrowserRouter>
   );

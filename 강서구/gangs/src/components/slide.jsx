@@ -1,15 +1,15 @@
 import React from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 export default function slide() {
   return (
     <div>
       <div className="dark">
         <p className="title">부산 강서구 gallery에 오신것을 환영합니다</p>
-        <div className="btn">
-          
+        <Link to="/gallery" className="btn">
           <p>gallery 이동하기</p>
-        </div>
+        </Link>
       </div>
       <div className="p1"></div>
       <div className="p2"></div>

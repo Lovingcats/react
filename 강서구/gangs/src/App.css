@@ -18,15 +18,27 @@
 
 .title{
   padding: 5%;
+  text-align: center;
   font-family: "Dongle", sans-serif;
   font-size: 400%;
   color: white;
 }
 
+.text{
+  text-align: center;
+  justify-content: center;
+}
+
+.btn:active{
+  margin-left: 5px;
+  margin-top: 19%;
+  box-shadow: none;
+}
+
 .btn{
+  padding: 3%;
   font-family: "Dongle", sans-serif;
   font-size: 275%;
-  display: flex;
   align-items: center;
   background-color: honeydew;
   opacity: 0.8;
@@ -39,12 +51,6 @@
   box-shadow: 3px 3px 3px black;
   cursor: pointer;
   transition-duration: 0.3s;
-}
-
-.btn:active{
-  margin-left: 5px;
-  margin-top: 19%;
-  box-shadow: none;
 }
 
 .dark {

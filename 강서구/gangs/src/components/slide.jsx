@@ -6,10 +6,16 @@ export default function slide() {
   return (
     <div>
       <div className="dark">
-        <p className="title">부산 강서구 gallery에 오신것을 환영합니다</p>
-        <Link to="/gallery" className="btn">
-          <p>gallery 이동하기</p>
-        </Link>
+        <div className="text">
+          <p className="title">부산 강서구 gallery에 오신것을 환영합니다</p>
+          <Link
+            to="/gallery "
+            style={{ textDecoration: "none" }}
+            className="btn"
+          >
+            gallery 이동하기
+          </Link>
+        </div>
       </div>
       <div className="p1"></div>
       <div className="p2"></div>

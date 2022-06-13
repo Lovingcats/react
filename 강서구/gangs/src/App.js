@@ -1,12 +1,16 @@
-
+import Gallery from "./components/gallery.jsx";
 import Slide from "./components/slide";
 import "./App.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Slide/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Slide />
+        <Gallery />
+      </div>
+    </BrowserRouter>
   );
 }
 

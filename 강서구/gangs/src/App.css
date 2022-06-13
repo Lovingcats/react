@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
+
 .App {
   position: absolute;
   top: 0;
@@ -13,17 +15,46 @@
   font-size: 250%;
 }
 
-#name {
-  font-size: 120%;
+
+.title{
+  padding: 5%;
+  font-family: "Dongle", sans-serif;
+  font-size: 400%;
+  color: white;
 }
 
+.btn{
+  font-family: "Dongle", sans-serif;
+  font-size: 275%;
+  display: flex;
+  align-items: center;
+  background-color: honeydew;
+  opacity: 0.8;
+  margin-top: 18%;
+  height: 10%;
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px black;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.btn:active{
+  margin-left: 5px;
+  margin-top: 19%;
+  box-shadow: none;
+}
 
 .dark {
+  
   display: flex;
   justify-content: center;
   z-index: 10;
   width: 277.8%;
   height: 177.5%;
+  animation: up 1.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/
   position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
 }
@@ -32,7 +63,7 @@ div {
   background-size: cover;
   width: 60%;
   height: 75%;
-  position: absolute;
+  position: absolute; 
 }
 
 div.p1 {
@@ -167,4 +198,9 @@ div.p16 {
     opacity: 1;
     transform: none;
   }
+}
+
+
+.doing{
+  font-size: 1000%;
 }

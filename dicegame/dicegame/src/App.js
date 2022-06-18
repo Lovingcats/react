@@ -1,9 +1,13 @@
-import './App.css';
-import Header from './components/header.jsx'
+import "./App.css";
+import Header from "./components/header.jsx";
+import Button from "./components/button.jsx";
 
 function App() {
   return (
-    <Header/>
+    <div>
+      <Header />
+      <Button />
+    </div>
   );
 }
 

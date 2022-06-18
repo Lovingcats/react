@@ -1,61 +1,60 @@
 body {
-    background-image: radial-gradient(#e7f7ff, #ffdaac);
-    height: 100vh;
-  }
-  #dice {
+  height: 100vh;
+}
+#dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  span {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 80px;
-      height: 80px;
-      background-color: #fff;
-      font-family: monospace;
-      font-size: 3rem;
-      color: #555;
-      margin: 20px;
-      transition: all .4s ease-in-out;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, .1);
-      transform-origin: center;
-      position: relative;
-      &.w1 {
-        transform: skew(0deg, -20deg) rotatey(45deg) translate(335px, 69px);
-      }
-      &.w2 {
-        transform: rotatex(68deg) rotatez(45deg) translate(5px, -206px);
-        z-index: 1;
-      }
-      &.w3 {
-        transform: skew(0deg, 20deg) rotatey(-45deg);
-        margin-right: -10px;
-        z-index: 1;
-      }
-      &.w4 {
-        transform: skew(0deg, -20deg) rotatey(45deg);
-        margin-left: -10px;
-        z-index: 1;
-      }
-      &.w5 {
-        transform: rotatex(-68deg) rotatez(-45deg) translate(-175px, -40px);
-        z-index: 0;
-      }
-      &.w6 {
-        transform: skew(0deg, 20deg) rotatey(-45deg) translate(-335px, 65px);
-        z-index: 0;
-      }
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    font-family: monospace;
+    font-size: 3rem;
+    color: #555;
+    margin: 20px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform-origin: center;
+    position: relative;
+    &.w1 {
+      transform: skew(0deg, -20deg) rotatey(45deg) translate(345px, 69px);
     }
-    .box {
-      display: flex;
-      &:hover {
-        span {
-          transform: initial;
-          margin: 5px;
-          animation: .4s spin ease-in-out;
-        }
+    &.w2 {
+      transform: rotatex(68deg) rotatez(45deg) translate(5px, -206px);
+      z-index: 1;
+    }
+    &.w3 {
+      transform: skew(0deg, 20deg) rotatey(-45deg);
+      margin-right: -10px;
+      z-index: 1;
+    }
+    &.w4 {
+      transform: skew(0deg, -20deg) rotatey(45deg);
+      margin-left: -10px;
+      z-index: 1;
+    }
+    &.w5 {
+      transform: rotatex(-68deg) rotatez(-45deg) translate(-170px, -45px);
+      z-index: 0;
+    }
+    &.w6 {
+      transform: skew(0deg, 20deg) rotatey(-45deg) translate(-335px, 65px);
+      z-index: 0;
+    }
+  }
+  .box {
+    display: flex;
+    &:hover {
+      span {
+        transform: initial;
+        margin: 5px;
+        animation: 0.4s spin ease-in-out;
       }
     }
   }
+}

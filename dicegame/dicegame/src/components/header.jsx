@@ -10,7 +10,7 @@ export default function header() {
         <span className="w3">l</span>
         <span className="w4">l</span>
         <span className="w5">o</span>
-        <span className="w6">!!</span>
+        <span className="w6">!</span>
       </div>
     </div>
   );

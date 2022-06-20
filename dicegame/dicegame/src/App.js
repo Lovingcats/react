@@ -1,12 +1,16 @@
-import "./App.css";
 import Header from "./components/header.jsx";
-import Button from "./components/button.jsx";
+import Play from "./components/play.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Button />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Header />}></Route>
+          <Route path="/Play" element={<Play />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

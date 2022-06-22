@@ -1,12 +1,13 @@
 import React from "react";
-import "./play.scss";
-
+import "./play.css";
+import IconButton from "@material-ui/core/IconButton";
+import CasinoOutlined from "@material-ui/icons/CasinoOutlined";
 export default function play() {
   return (
-    <div id="dice1">
-      <div className="box1">
-        시작하기
-      </div>
+    <div>
+      <IconButton size="medium">
+        <CasinoOutlined />
+      </IconButton>
     </div>
   );
 }

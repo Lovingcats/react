@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.scss";
-import Button from "./button.jsx";
+import { Link } from "react-router-dom";
 
-export default function header() {
+export default function Header() {
+  const [color, setColor] = useState("black");
   return (
     <div>
       <div id="dice">
@@ -15,7 +16,11 @@ export default function header() {
           <span className="w6">!</span>
         </div>
       </div>
-      <Button />
+      <div id="button">
+      <Link to="/Play" class="btn btn-solid effect-scale">
+        시작하기
+      </Link>
+    </div>
     </div>
   );
 }

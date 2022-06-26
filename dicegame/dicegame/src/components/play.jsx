@@ -5,13 +5,18 @@ import "./play.css";
 
 export default function play() {
 
-  
+
   var choose = new Boolean(false);
-  if (choose == 0) {
+  if (choose == 1) {
     return (
       <div className="choosing">
-        <div className="team1">청팀</div>
-        <div className="team2">백팀</div>
+        <h2>팀을 선택해주세요</h2>
+        <span className="team1">
+          1
+        </span>
+        <span className="team2">
+          2
+        </span>
       </div>
     );
   } else {

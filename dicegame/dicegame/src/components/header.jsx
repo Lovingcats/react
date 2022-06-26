@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [color, setColor] = useState("black");
   return (
-    <div>
+    <div id="Header">
+      <h1>웹 개인 프로젝트</h1>
       <div id="dice">
         <div className="box">
           <span className="w1">H</span>
@@ -17,10 +18,10 @@ export default function Header() {
         </div>
       </div>
       <div id="button">
-      <Link to="/Play" class="btn btn-solid effect-scale">
-        시작하기
-      </Link>
-    </div>
+        <Link to="/Play" class="btn btn-solid effect-scale">
+          시작하기
+        </Link>
+      </div>
     </div>
   );
 }

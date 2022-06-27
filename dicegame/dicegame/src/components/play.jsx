@@ -1,11 +1,11 @@
 import React from "react";
 import IconButton from "@material-ui/core/IconButton";
 import CasinoOutlined from "@material-ui/icons/CasinoOutlined";
-import "./play.css";
+import "./play.scss";
 
 export default function play() {
   var choose = new Boolean(false);
-  if (choose == 0) {
+  if (choose == 1) {
     return (
       <div className="choosing">
         <h2 className="console">팀을 선택해주세요</h2>
@@ -24,6 +24,12 @@ export default function play() {
       </div>
     );
   } else {
-    return <p>hello</p>;
+    return (
+      <div className="board">
+          <div className="firstrow">
+            
+          </div>
+      </div>
+    );
   }
 }

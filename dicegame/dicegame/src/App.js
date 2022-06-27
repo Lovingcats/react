@@ -1,5 +1,5 @@
 import Header from "./components/header.jsx";
-import Game from "./components/play.jsx";
+import Play from "./components/play.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />}></Route>
-          <Route path="/Game" element={<Game />}></Route>
+          <Route path="/Play" element={<Play />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

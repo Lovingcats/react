@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  padding: 20px;
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(45deg, #457b9d, #a8dadc);
+}
+.Board {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px 80px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: auto;
+}
+.Card {
+  height: 80px;
+  background: #1d3557;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Card > .iconify {
+  width: 60px;
+  height: 60px;
+  display: none;
+}
+
+.active:disabled {
+  background: #f1faee;
+}
+
+.active:disabled > .iconify {
+  display: inline;
+}

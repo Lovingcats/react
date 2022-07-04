@@ -19,14 +19,14 @@ function detectWinner(p) {
 
   if (p[0] == CROSS && p[1] == CROSS && p[2] == CROSS) return CROSS;
   if (p[3] == CROSS && p[4] == CROSS && p[5] == CROSS) return CROSS;
-  if (p[6] == CROSS && p[7] == CROSS && p[8] == CROSS) return CIRCLE;
+  if (p[6] == CROSS && p[7] == CROSS && p[8] == CROSS) return CROSS;
 
-  if (p[0] == CROSS && p[3] == CROSS && p[6] == CROSS) return CIRCLE;
-  if (p[1] == CROSS && p[4] == CROSS && p[7] == CROSS) return CIRCLE;
-  if (p[2] == CROSS && p[5] == CROSS && p[8] == CROSS) return CIRCLE;
+  if (p[0] == CROSS && p[3] == CROSS && p[6] == CROSS) return CROSS;
+  if (p[1] == CROSS && p[4] == CROSS && p[7] == CROSS) return CROSS;
+  if (p[2] == CROSS && p[5] == CROSS && p[8] == CROSS) return CROSS;
 
-  if (p[0] == CROSS && p[4] == CROSS && p[8] == CROSS) return CIRCLE;
-  if (p[2] == CROSS && p[4] == CROSS && p[6] == CROSS) return CIRCLE;
+  if (p[0] == CROSS && p[4] == CROSS && p[8] == CROSS) return CROSS;
+  if (p[2] == CROSS && p[4] == CROSS && p[6] == CROSS) return CROSS;
 
   if (p.every((position) => position != EMPTY)) return "무승부입니다";
 }
@@ -66,7 +66,7 @@ function App() {
   const winner = detectWinner(state.positions);
 
   return (
-    <div>
+    <div className="grid-box">
       <div className="grid">
         <Square position={0} value={state.positions[0]} takeTurn={takeTurn} />
         <Square position={1} value={state.positions[1]} takeTurn={takeTurn} />

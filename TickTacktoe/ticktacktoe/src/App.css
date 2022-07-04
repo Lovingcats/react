@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -14,7 +14,13 @@ body {
   height: 100vh;
 }
 
+.grid-box {
+  height: 100%;
+  vertical-align: middle;
+}
+
 .grid {
+  justify-content: center;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
@@ -34,15 +40,13 @@ body {
 
 svg {
   stroke-width: 15px;
-  stroke: #FF665C;
+  stroke: #ff665c;
   fill: none;
   stroke-linecap: round;
 }
 
-
-
 .cross {
-  stroke: #EC0B8E;
+  stroke: #ec0b8e;
 }
 
 .result {
@@ -57,7 +61,7 @@ svg {
   flex-direction: column;
   font-size: 3em;
   font-weight: bold;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
 }
 

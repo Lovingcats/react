@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
+
+.App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+#headN {
+  text-align: center;
+  margin-top: 6%;
+  font-size: 250%;
+}
+
+.title {
+  padding: 5%;
+  text-align: center;
+  font-family: "Dongle", sans-serif;
+  font-size: 400%;
+  color: white;
+}
+
+.text {
+  text-align: center;
+  justify-content: center;
+}
+
+.btn:active {
+  margin-left: 5px;
+  margin-top: 19%;
+  box-shadow: none;
+}
+
+.btn {
+  padding: 3%;
+  font-family: "Dongle", sans-serif;
+  font-size: 275%;
+  align-items: center;
+  background-color: honeydew;
+  opacity: 0.8;
+  margin-top: 18%;
+  height: 10%;
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px black;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.dark {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  width: 277.8%;
+  height: 177.5%;
+  animation: up 1.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/
+  position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
+}
+
+div {
+  background-size: cover;
+  width: 60%;
+  height: 75%;
+  position: absolute;
+}
+
+div.p1 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main1.jpg);
+  top: 0%;
+  left: 0%;
+  animation: up 0.5s ease-in-out;
+}
+
+div.p2 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main2.jpg);
+  top: 50%;
+  left: 5%;
+  z-index: 1;
+  animation: up 0.8s ease-in-out;
+}
+
+div.p3 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main3.jfif);
+  top: 102%;
+  left: 0%;
+
+  animation: up 1s ease-in-out;
+}
+
+div.p4 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main4.jfif);
+  top: 95%;
+  left: 50%;
+  z-index: 1;
+  animation: up 1s ease-in-out;
+}
+
+div.p5 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main5.jfif);
+  top: 5%;
+  left: 50%;
+  z-index: 2;
+  animation: up 1s ease-in-out;
+}
+
+div.p6 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main6.jfif);
+  top: 50%;
+  left: 148%;
+
+  z-index: 5;
+  animation: up 0.8s ease-in-out;
+}
+
+div.p7 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main7.jfif);
+  top: 50%;
+  left: 70%;
+  z-index: 5;
+  animation: up 0.8s ease-in-out;
+}
+
+div.p8 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main8.jfif);
+  top: 5%;
+  left: 167%;
+  z-index: 3;
+  animation: up 1s ease-in-out;
+}
+
+div.p9 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main9.jfif);
+  top: 97%;
+  left: 167%;
+  z-index: 2;
+  animation: up 1s ease-in-out;
+}
+
+div.p10 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main10.jfif);
+  top: 2%;
+  left: 217%;
+  animation: up 1s ease-in-out;
+}
+
+div.p11 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main11.jfif);
+  top: 52%;
+  left: 212%;
+  z-index: 1;
+  animation: up 0.8s ease-in-out;
+}
+
+div.p12 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main12.jfif);
+  top: 102%;
+  left: 217%;
+  animation: up 0.5s ease-in-out;
+}
+
+div.p13 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main13.jfif);
+  top: 102%;
+  left: 75%;
+  animation: up 0.5s ease-in-out;
+}
+
+div.p14 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main14.jfif);
+  top: 102%;
+  left: 142%;
+  animation: up 0.5s ease-in-out;
+}
+
+div.p15 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main15.jfif);
+  top: 0%;
+  left: 75%;
+
+  animation: up 0.5s ease-in-out;
+}
+
+div.p16 {
+  background-image: url(C:\Users\SW2146\Desktop\react\gallery\public\main16.jfif);
+  top: 0%;
+  left: 142%;
+  animation: up 0.5s ease-in-out;
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

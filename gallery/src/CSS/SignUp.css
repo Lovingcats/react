@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.div--SignUp {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../public/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form--SignUp {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input {
+  height: 7%;
+  border: 2px solid rgba(175, 171, 171, 0.8);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+button {
+  width: 30%;
+  height: 7%;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+}

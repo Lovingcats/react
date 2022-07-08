@@ -1,50 +1,66 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-const path = require('path');
-var multer = require('multer');
-const { User } = require('../models/User');
-const { auth } = require("../middleware/auth");
-let image_array = new Array();
+const mongoose = require("mongoose");
+const path = require("path");
+var multer = require("multer");
+const { Image } = require("../models/image_moudle");
 const upload = multer({
-    storage: multer.diskStorage({
-        destination: function (req, file, cb) {
-            cb(null, 'public/image/');
-        },
-        filename: function (req, file, cb) {
-            var newFileName = new Date().valueOf() + path.extname(file.originalname)
-            cb(null, newFileName);
-        }
-    }),
+  storage: multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, "public/images/");
+    },
+    filename: function (req, file, cb) {
+      var newFileName = new Date().valueOf() + path.extname(file.originalname);
+      cb(null, newFileName);
+    },
+  }),
 });
 
-router.get('/', auth,(req, res) => {
-    let token = req.cookies.user_auth;
-    res.status(200).json({ massage:'이미지 화면에 들어오신 것을 확인하십니다.', isAuth: true, token: token });
-})
+router.get("/", (req, res) => {
+  res
+    .status(200)
+    .json({ massage: "이미지 화면에 들어오신 것을 확인하십니다." });
+});
 
-router.post('/upload', upload.single('imageFile'), (req, res) => {
-    let date = new Date();
-    let today = date.getDate();
-    let token = req.cookies.user_auth;
-    // let tomorrow = new Date(date.setDate(date.getDate() + 1));
-    // console.log(tomorrow.getDate())
-    var image = '/static/image/' + req.file.filename
-    let upload = 'http://localhost:7080/image/' + req.file.filename;
-    let array = {
-        image_path: upload,
-        upload_day: today + '/' + date.getHours() + '/' + date.getMinutes()
-    }
-    image_array.push(image)
-    const json = {
-        'image_path' : image_array
-    }
-    console.log(json);
-    User.findOneAndUpdate({ token: token },{$push : {image: array}}, (err, user) => {
-        if (err) return res.json({ success: false, err });
+router.post("/upload", upload.single("imageFile"), (req, res) => {
+  let path = "./images/" + req.file.filename;
+  const _id = mongoose.Types.ObjectId;
+  console.log(_id);
+  const image = new Image({
+    image: [
+      {
+        image_path: path,
+      },
+    ],
+  });
+  if (!image) {
+    image.save((err, result) => {
+      if (err) {
+        res.json({
+          success: false,
+          massage:
+            "post data가 제대로 들어오지 않았습니다. 다시 시도해주겠습니까?",
+        });
+      } else {
+        console.log("저장 완료");
+        res.status(200).json({
+          image_path: path,
+        });
+      }
+    });
+  } else {
+    Image.findOneAndUpdate(
+      { _id: _id },
+      { $push: { image_path: path } },
+      (err, result) => {
+        if (err) return res.json({ err: err });
         else {
-            return res.status(200).json({ image_json: json, massage: '제대로 전달 됨.', success: true })
+          console.log("업데이트 완료");
+          return res.status(200).json({ image_path: path });
         }
-    })
+      }
+    );
+  }
 });
 
 module.exports = router;
